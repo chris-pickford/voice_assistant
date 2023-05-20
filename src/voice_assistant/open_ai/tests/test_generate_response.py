@@ -1,4 +1,6 @@
 import pytest
 
 
-class Test
+class TestGPTResponseGenerator:
+    def test_submit(self):
+        assert False

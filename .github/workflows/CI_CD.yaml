@@ -10,13 +10,16 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
+
       - name: Setup python
         uses: actions/setup-python@v2
         with:
           python-version: 3.9
+
       - name: Install Dependencies
         run: |
           pip install requirements/requirements.txt
+          
       - name: Run Test Suite
         run: |
           pytest src/
