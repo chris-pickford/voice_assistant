@@ -1,7 +1,7 @@
 import pyttsx3
 import speech_recognition as sr
 
-from _base import ITranscriber
+from ._base import ITranscriber
 
 
 class AudioTranscriber(ITranscriber):
