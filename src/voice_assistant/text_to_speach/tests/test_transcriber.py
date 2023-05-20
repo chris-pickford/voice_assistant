@@ -2,4 +2,7 @@ import pytest
 
 from .._transcriber import AudioTranscriber
 
-class TestAudioTrascriber(self)
+
+class TestAudioTrascriber:
+    def test_transcriber(self):
+        assert False
