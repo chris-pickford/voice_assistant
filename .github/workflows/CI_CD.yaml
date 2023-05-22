@@ -2,7 +2,7 @@ name: CI/CD Pipeline
 on:
   pull_request:
     branches:
-      -main
+      - main
 
 jobs:
   build:
@@ -18,7 +18,7 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          pip install requirements/requirements.txt
+          pip install -r requirements/requirements.txt
           
       - name: Run Test Suite
         run: |
