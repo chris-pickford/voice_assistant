@@ -1,5 +1,5 @@
 import pyttsx3
-import speech_recognition as sr
+import SpeechRecognition as sr
 
 from ._base import ITranscriber
 
@@ -18,3 +18,7 @@ class AudioTranscriber(ITranscriber):
 
         except:
             print("Could not recognise audio")
+
+    def vocalise(self, text: str):
+        self.engine.say(text)
+        self.engine.runAndWait()

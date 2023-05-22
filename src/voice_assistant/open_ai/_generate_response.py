@@ -1,16 +1,5 @@
-<<<<<<< Updated upstream
 import openai
 
-from ._base import IGPTResponseGenerator
-
-
-class GPTResponseGenerator(IGPTResponseGenerator):
-    def __init__(self):
-        pass
-
-    def submit(self, query: str) -> str:
-        pass
-=======
 class GPTResponseGenerator(IGPTResponseGenerator):
     def __init__(self):
         pass
@@ -25,4 +14,3 @@ class GPTResponseGenerator(IGPTResponseGenerator):
             temperature=0.5,
         )
         return response["choices"][0]["text"]
->>>>>>> Stashed changes
