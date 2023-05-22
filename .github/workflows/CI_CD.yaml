@@ -18,7 +18,7 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          pip install requirements/requirements.txt
+          pip install -r requirements/requirements.txt
           
       - name: Run Test Suite
         run: |
