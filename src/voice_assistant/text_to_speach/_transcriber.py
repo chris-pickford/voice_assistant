@@ -1,5 +1,5 @@
 import pyttsx3
-import SpeechRecognition as sr
+import speech_recognition as sr
 
 from ._base import ITranscriber
 
