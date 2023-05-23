@@ -1,3 +1,3 @@
-from ._transcriber import AudioTranscriber
+from ._language import AudioTranscriber, TextVocaliser
 
-__all__ = [AudioTranscriber]
+__all__ = [AudioTranscriber, TextVocaliser]

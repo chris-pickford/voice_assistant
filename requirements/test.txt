@@ -1,0 +1,4 @@
+pytest
+SpeechRecognition
+openai
+pyttsx3

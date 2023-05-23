@@ -1,9 +1,9 @@
 from abc import ABC
 
 
-class ITranscriber(ABC):
+class ILanguageModule(ABC):
     def __init__(self):
         pass
 
-    def trascribe(self):
+    def run(self):
         pass
