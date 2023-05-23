@@ -1,5 +1,17 @@
 import openai
 from ._base import IGPTResponseGenerator
+import os
+
+openai.api_key_path = os.path.join(
+    os.path.dirname(__file__),
+    "..",
+    "..",
+    "..",
+    "..",
+    "..",
+    "PRIVATE_KEYS",
+    "OPEN_AI_KEY.txt",
+)
 
 
 class GPTResponseGenerator(IGPTResponseGenerator):
